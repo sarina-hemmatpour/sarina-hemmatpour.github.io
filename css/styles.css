@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-size: 16px;
     width: 100%;
@@ -394,13 +398,11 @@ section{
 
     width: 50%;
     margin-right: 20px;
-    background-color: antiquewhite;
 }
 
 .contact-container .input{
     width: 50%;
     margin-left: 20px;
-    background-color: aquamarine;
 }
 
 .contact-container .content .title, .input .title{
@@ -426,16 +428,71 @@ section{
     margin-left: 8px;
     width: 54px;
     height: 54px;
-    fill: cornflowerblue;
     align-self: center;
-    /* background-color: #030300; */
+    flex-shrink: 0;
 }
 
 .contact-container .content .details{
     align-self: center;
-    margin-left: 32px;
+    margin-left: 16px;
 }
 .contact-container .content .head{
     font-weight: 600;
     margin-bottom: 4px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .address-fields{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.contact-container .field{
+    margin-bottom: 15px;
+    width: 100%;
+    height: 45px;
+}
+
+.name{
+    margin-right: 10px;
+}
+.email{
+    margin-left: 10px;
+}
+
+.contact-container input{
+    padding: 0px 16px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.contact-container textarea{
+    width: 100%;
+    height: 150px;
+    padding: 16px 16px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    font-family: Arial;
+
+}
+.contact-container .btn{
+    font-size: 18px;
+    padding: 7px 17px;
+    width: fit-content;
+    color: white;
+    margin-top: 105px;
+}
+.contact-container .btn:hover{
+    color: cornflowerblue;
 }
