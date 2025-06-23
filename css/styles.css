@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+}
+
+.primary-color{
+    color: cornflowerblue;
+}
+
+p{
+    text-decoration: none;
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+    font-family: Arial;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    background-color: #030300;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px 65px;
+    padding-bottom: 27px;
+}
+
+section{
+    padding: 100px 0 ;
+    border-radius: 12px 12px 0 0;
+    margin-top: -12px;
+    min-height: calc(100% + 12px);
+}
+
+.logo{
+    color: white;
+    font-family: Arial;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.logo span{
+    color:cornflowerblue;
+}
+
+/* .link li{
+    display: inline;
+} */
+.link ul{
+    display: flex;
+}
+
+.link ul li{
+    margin-right: 24px;
+}
+.link ul li a{
+    margin-right: 24px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.15s
+}
+
+.link ul li a:hover{
+    color: cornflowerblue;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: #030300;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-container{
+    margin: -1px 0 0 120px;
+}
+.home p,a{
+    color: white;
+}
+.btn{
+    background-color: cornflowerblue;
+    padding: 12px 36px ;
+    border-radius: 12px;
+    font-size: 25px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background-color: transparent;
+    color: cornflowerblue;
+}
+.txt-greeting{
+    font-size: 28px;
+}
+.txt-name{
+    font-size: 75px;
+    font-weight: 600;
+}
+.txt-role{
+    font-size: 40px;
+    margin: 5px 0;
+    margin-bottom: 45px;
+}
+.txt-role span{
+    color: cornflowerblue;
+}
+
+.about{
+    background-color: white;
+}
+.section-title h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: Arial;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.section-title h2::before{
+    content: '';
+    width: 161px;
+    height: 2px;
+    background-color: #a3a3a3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.section-title h2::after{
+    content: 'Who I am';
+    font-size: 16px;
+    font-weight: 550;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: white;
+    padding:5px;
+    color: cornflowerblue;
+    bottom: -12px;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.about-avatar{
+    width: 45%;
+}
+
+.about-avatar img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.about-content{
+    width: 55%;
+}
+.about-content-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-content-description{
+    width: 80%;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.about-content .btn{
+    font-size: 22px;
+    padding: 7px 17px;
+}
+
+.services{
+    width: 100%;
+    background-color: #030300;
+}
+
+.services-container .section-title h2{
+    color: white;
+}
+
+.services-container .section-title h2::after{
+    background-color: #030300;
+    content: 'What I provide';
+}
+
+.services-container .cards{
+    display: flex;
+    padding: 0 80px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container .card{
+    width: calc(33% - 32px);
+    min-height: 285px;
+}
+.card{
+    background-color: #222;
+    border-radius: 12px;
+    padding: 22px 28px;
+    margin: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background-color: cornflowerblue;
+}
+
+.card-container{
+    transition: all 0.3s ease;
+    justify-items: center;
+}
+.card-container:hover{
+    transform: scale(1.05);
+}
+.card svg{
+    background-color: transparent;
+    fill: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    align-self: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover svg{
+    fill: white;
+}
+.card .title {
+    color: white;
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 550;
+    margin: 10px 0 7px 0;
+}
+.card .description{
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+.skills{
+    width: 100%;
+    background-color: white;
+}
+
+.skills .section-title h2::after{
+    content: 'What I know';
+}
+
+.skills .skills-container{
+    padding: 0 80px;
+    display: flex;
+}
+
+.skills .section-content{
+    width: 50%;
+    margin-right: 20px;
+}
+.skills .section-skills{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.skill-item{
+    background-color: rgb(230, 230, 230);
+    color: #030300;
+    font-weight: 550;
+    font-family: Arial;
+    padding: 8px 8px ;
+    border-radius: 12px;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: rgb(230, 230, 230);
+    transition: all 0.3s ease;
+    margin: 16px 10px 0px 10px;
+    cursor: pointer;
+    text-decoration: none; /* important for <a> tags */
+    display: inline-block; /* ensures it's blocky in shape */
+}
+.skill-item:hover{
+    background-color: transparent;
+    border-color: cornflowerblue;
+    color: cornflowerblue;
+}
+
+.skills-container .section-content .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #030300;
+    margin-bottom: 10px;
+}
+
+.skills-container .section-content .description{
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.skills-container .section-content .btn{
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.skills-container .section-content .btn svg {
+    margin-left: 8px;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 2px;
+}
+
+.projects{
+    width: 100%;
+    background-color:#030300;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .section-title h2{
+    color: white;
+}
+
+.projects .section-title h2::after{
+    background-color: #030300;
+    content: 'What I\'ve built';
+}
+.projects-container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.projects-container .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 80px;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.projects-container .cards .card{
+    width: 400px;
+}
+
+.contact .section-title h2::after{
+    content: 'Get in touch';
+}
+
+.contact{
+    width: 100%;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container{
+    padding: 0 80px;
+    display: flex;
+}
+.contact-container .content{
+
+    width: 50%;
+    margin-right: 20px;
+    background-color: antiquewhite;
+}
+
+.contact-container .input{
+    width: 50%;
+    margin-left: 20px;
+    background-color: aquamarine;
+}
+
+.contact-container .content .title, .input .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #030300;
+    margin-bottom: 10px;
+}
+
+.contact-container .content .description{
+    margin-bottom: 30px;
+    text-align: justify;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.contact-container .content .info{
+    display: flex;
+    margin: 20px 0;
+}
+
+.contact-container .content .info svg {
+    margin-left: 8px;
+    width: 54px;
+    height: 54px;
+    fill: cornflowerblue;
+    align-self: center;
+    /* background-color: #030300; */
+}
+
+.contact-container .content .details{
+    align-self: center;
+    margin-left: 32px;
+}
+.contact-container .content .head{
+    font-weight: 600;
+    margin-bottom: 4px;
+}
